@@ -110,11 +110,16 @@ body {
   width: 430px; 
   height: auto;
   margin: 80px auto;
-  border-radius: 5px;  
+  border-radius: 8px;  
   padding-top: 5px;
-  padding-bottom: 5px;  
-  background-color: #c7c3c3; 
-  padding-left: 5px; 
+  padding-bottom: 5px; 
+    
+  /*usando generador de css*/
+padding-left: 5px; 
+background: rgba(71,151,197,0.95);
+background: linear-gradient(166deg,rgba(71,151,197,0.95) 0%, rgba(71,197,193,0.94) 80%);
+background: -webkit-linear-gradient(166deg,rgba(71,151,197,0.95) 0%, rgba(71,197,193,0.94) 80%);
+background: -moz-linear-gradient(166deg,rgba(71,151,197,0.95) 0%, rgba(71,197,193,0.94) 80%);
 }
 input{
   background-color: #fbfbfb; 
@@ -127,20 +132,28 @@ input{
   margin-top: 1px;  
   padding-left: 1px;
   margin-bottom: 1px; 
+    
+    /*usando generador de css*/
+  border-radius: 77px 77px 77px 77px;
+  -webkit-border-radius: 77px 77px 77px 77px;
+  -moz-border-radius: 77px 77px 77px 77px;
+  background: #ffffff; 
 }
 
 textarea{
-  background-color: #fbfbfb; 
+ background-color: #fbfbfb; 
   width: 308px; 
   height: 80px; 
-  border-radius: 5px;  
   border-style: solid; 
-  border-width: 1px; 
   border-color: #4797c5; 
   margin-top: 5px;  
   padding-left: 5px;
   margin-bottom: 5px; 
   padding-top: 5px; 
+/*usando generador de css*/
+  border-radius: 9px 9px 9px 9px;
+  -webkit-border-radius: 9px 9px 9px 9px;
+  -moz-border-radius: 9px 9px 9px 9px;
 }
 
 label{
@@ -149,18 +162,23 @@ label{
 }
 
 button{
-  height: 45px; 
+ height: 45px; 
   padding-left: 5px;
   padding-right: 5px;   
   margin-bottom: 5px; 
   margin-top: 5px;   
   text-transform: uppercase;
-  background-color: #256b94; 
-  border-color: #4797c5; 
+  
+  border-color: #00a896; 
   border-style: solid; 
-  border-radius: 5px;  
+   
   width: 150px;   
   cursor: pointer;
+  /*usando generador de css*/
+  border-radius: 46px 46px 46px 46px;
+  -webkit-border-radius: 46px 46px 46px 46px;
+  -moz-border-radius: 46px 46px 46px 46px;
+  background: #256b94;
 }
 
 
