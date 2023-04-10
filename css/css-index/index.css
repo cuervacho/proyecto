@@ -22,7 +22,7 @@ body {
 
 .container {
     margin-top: 15%;
-   justify-content: center;
+    justify-content: center;
 }
 
 .cabecera {
@@ -35,7 +35,6 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     width: 100%;
-    
   }
 
 .cabecera__logo {
@@ -43,15 +42,21 @@ body {
     align-items: center;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 .cabecera__menu {
     display: flex;
-    width: 700px;
+    width: 100%;
     align-items: center;
     list-style: none;
     padding-top: 5px;
 }
 
 .cabecera__item {
+    display: flex;
     margin-right: 50px;
     text-transform: uppercase; /* transforma minúsculas en mayusculas */
     font-family: 'Roboto', 'Open Sans', sans-serif;
@@ -99,6 +104,8 @@ main {
     width: 100%; /* ancho */
     text-align: center;
     display: flex;
+    align-items: center;
+    margin-bottom: 0;
 }
 
 .pie__redes{
@@ -128,9 +135,14 @@ main {
         padding-top: 15px;
     }
 
+    nav {
+        width: 400px;
+    }
+
     .cabecera__menu {
         flex-direction: column;
-        width: 200px;
+        width: 250px;
+        align-items: initial;
     }
 
 
@@ -152,9 +164,8 @@ main {
         text-align: justify;        
     }
    
-
     .pie {
-        max-width: 425;
+        max-width: 425px;
     }
 
     .pie__redes {
@@ -162,6 +173,7 @@ main {
         width: 300px;
         justify-content: space-around;
         text-align: center;
+        align-items: center;
     }
 }
 

@@ -1,5 +1,8 @@
 /* Importación de fuentes de google fonts */ 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght300;@900&display=swap');
+/* Importación de fuentes de google fonts */ 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
 
 /* Agregado ----------Es para reseatear los valores que por defecto traen estos atributos en los navegadores */
 html, body{
@@ -21,20 +24,9 @@ body {
     line-height: 1.6;
 }
 
-.cabecera {
-  top:0;
-  left: 0;
-  position: fixed;
-  display:flex;
-  background: #028090;
-  justify-content: space-between;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  width: 100%;
-  
-}
 
-.cabecera__logo {
+
+/* .cabecera__logo {
     padding-left: 50px;
     align-items: center;
 }
@@ -49,23 +41,25 @@ body {
 
 .cabecera__item {
     margin-right: 50px;
-    text-transform: uppercase; /* transforma minúsculas en mayusculas */
+    text-transform: uppercase;  transforma minúsculas en mayusculas
     font-family: 'Roboto', 'Open Sans', sans-serif;
     font-size: larger;
     font-weight: bolder;
 }
 
 .cabecera__item a {
-    text-decoration: none; /* le quita el subrayado del link */
+    text-decoration: none; le quita el subrayado del link 
 }
 
 body {
-    /*background-image: url(ubicacion de la foto de fondo, debe ser la misma carpeta); */
     background-size:auto;
     background-color: #f0f3bd
-}
+} */
 
 .cabecera {
+  top:0;
+  left: 0;
+  position: fixed;
   display: flex;
   background: #028090;
   justify-content: space-between;
@@ -79,9 +73,14 @@ body {
   align-items: center;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 .cabecera__menu {
   display: flex;
-  width: 700px;
+  width: 100%;
   align-items: center;
   list-style: none;
   padding-top: 5px;
@@ -103,8 +102,6 @@ body {
 .formulario {
     text-align: center;
 }
-/* Importación de fuentes de google fonts */ 
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
 .contact_form{  
   width: 430px; 
@@ -219,6 +216,7 @@ p{
   text-align: center;
   /* left: 0; */ /* Posicionamos el pie al lado izquierdo */
   display: flex;
+  align-items: center;
 }
 
 .pie__redes{
@@ -226,6 +224,7 @@ p{
   justify-content: space-around; /* espacio alrededor de los elementos */
   width: 100%;
   list-style: none; /* para quitarle la viñeta a los li de las ul */
+  align-items: center;
 }
 
 .pie__icono {
@@ -247,9 +246,13 @@ p{
       padding-top: 15px;
   }
 
+  nav {
+    width: 400px;
+  }
+
   .cabecera__menu {
       flex-direction: column;
-      width: 200px;
+      width: 250px;
   }
 
   .contact_form {
@@ -258,7 +261,7 @@ p{
   }
 
   .pie {
-      max-width: 425;
+      max-width: 425px;
   }
 
   .pie__redes {
@@ -266,6 +269,7 @@ p{
       width: 300px;
       justify-content: space-around;
       text-align: center;
+      align-items: center;
   }
 }
 @media screen and(max-width:767px){
