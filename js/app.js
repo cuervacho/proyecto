@@ -6,7 +6,7 @@ $(document).ready(function() {
 
         success: function (data) {
             $.each(data, function(i,item){
-                var row = "<tr>" + 
+                var row = "<tr >" + 
                             "<th scope='row'>" + item.id + "</th>" +
                             "<td>" + item.name + "</td>" +
                             "<td>" + item.address.city + "</td>" +
